@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
    res.sendFile(__dirname +'/index.html');
 })
 //express port
-var port = process.env.port || 8000;
+var port = process.env.PORT || 8000;
 app.listen(port, function(){
 	console.log('Running at port: ' + port);
 });
